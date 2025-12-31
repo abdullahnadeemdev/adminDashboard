@@ -21,11 +21,3 @@
   }
 }
 
-     
-:root {
-  --font-mono: "Source Code Pro", monospace;
-}
-
-body {
-  font-family: var(--font-mono);
-}

@@ -4,7 +4,7 @@ import Topbar from "./components/shared/topBar/Index";
 import Sidebar from "./components/shared/sidebar/Index";
 import Dashboard from "./pages/dashboard/Dashboard";
 import { Route, Routes } from "react-router-dom";
-// import Team from "./pages/team/Team";
+import Team from "./pages/team/Index";
 // import Invoices from "./pages/invoices/Invoices";
 // import Contacts from "./pages/contacts/Contacts";
 // import Form from "./pages/form/Form";
@@ -21,22 +21,22 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div>
+        <div className=" flex h-screen">
           <Sidebar />
-          <main>
+          <main className=" w-full">
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/team" element={<Team />} />
-                <Route path="/contacts" element={<Contacts />} />
-                <Route path="/invoices" element={<Invoices />} />
-                <Route path="/form" element={<Form />} />
-                <Route path="/bar" element={<Bar />} />
-                <Route path="/line" element={<Line />} />
-                <Route path="/pie" element={<Pie />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/geography" element={<Geography />} />
-                <Route path="/calender" element={<Calender />} /> */}
+              <Route path="/team" element={<Team />} />
+              {/* <Route path="/contacts" element={<Contacts />} /> */}
+              {/* <Route path="/invoices" element={<Invoices />} /> */}
+              {/* <Route path="/form" element={<Form />} /> */}
+              {/* <Route path="/bar" element={<Bar />} /> */}
+              {/* <Route path="/line" element={<Line />} /> */}
+              {/* <Route path="/pie" element={<Pie />} /> */}
+              {/* <Route path="/faq" element={<FAQ />} /> */}
+              {/* <Route path="/geography" element={<Geography />} />/ */}
+              {/* <Route path="/calender" element={<Calender />} />  */}
             </Routes>
           </main>
         </div>

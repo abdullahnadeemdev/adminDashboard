@@ -12,7 +12,8 @@ import Calendar from "./pages/calendar/Index";
 import FAQ from "./pages/FAQ/Index";
 import Bar from "./pages/barChart/Index";
 import Pie from "./pages/pie/Index";
-// import Line from "./pages/dashboard/Dashboard";
+import Line from "./pages/LineChart";
+import Geography from "./pages/GeographyChart";
 // import Geography from "./pages/dashboard/Dashboard";
 
 function App() {
@@ -35,8 +36,8 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
-              {/* <Route path="/line" element={<Line />} /> */}
-              {/* <Route path="/geography" element={<Geography />} />/ */}
+              <Route path="/line" element={<Line />} />
+              <Route path="/geography" element={<Geography />} />/
             </Routes>
           </main>
         </div>

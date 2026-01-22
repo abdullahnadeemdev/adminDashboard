@@ -1,5 +1,6 @@
-import { Box } from "@mui/material";
-import React from "react";
+import { Box, useTheme } from "@mui/material";
+import { tokens } from "../../theme";
+
 import Header from "../../components/shared/header/Header";
 
 const Dashboard = () => {

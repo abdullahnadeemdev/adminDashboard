@@ -14,7 +14,6 @@ import Bar from "./pages/barChart/Index";
 import Pie from "./pages/pie/Index";
 import Line from "./pages/LineChart";
 import Geography from "./pages/GeographyChart";
-// import Geography from "./pages/dashboard/Dashboard";
 
 function App() {
   const [theme, colorMode] = useMode();

@@ -1,4 +1,4 @@
-import Team from "../../components/scenes/team/Index";
+import Team from "../../components/Team";
 
 const Index = () => {
   return (

@@ -10,7 +10,7 @@ import Contacts from "./pages/contacts/Index";
 import Form from "./pages/form/Index";
 import Calendar from "./pages/calendar/Index";
 import FAQ from "./pages/FAQ/Index";
-import Bar from "./pages/barChart/Index";
+import Bar from "./pages/BarChart";
 import Pie from "./pages/pie/Index";
 import Line from "./pages/LineChart";
 import Geography from "./pages/GeographyChart";

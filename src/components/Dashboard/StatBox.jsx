@@ -7,7 +7,6 @@ const StatBox = ({ title, subTitle, icon, progress, increase }) => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box width="100%" m="0 30px">
-      {/* TOP ROW: Icon + Title (Left) and Circle (Right) */}
       <Box display="flex" justifyContent="space-between">
         <Box>
           {icon}

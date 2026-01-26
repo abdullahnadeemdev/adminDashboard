@@ -9,10 +9,15 @@ const index = ({ isDashboard = false }) => {
   const colors = tokens(theme.palette.mode);
   return (
     <>
-      <Box>
-        <Header title="Line Chart" subTitle="Simple Line Chart " />
-      </Box>
-      <Box height="75vh">
+      {!isDashboard ? (
+        <Box>
+          <Header title="Line Chart" subTitle="Simple Line Chart " />
+        </Box>
+      ) : (
+        ""
+      )}
+
+      <Box height={!isDashboard ? "10vh" : "75vh"}>
         <ResponsiveLine
           data={data}
           theme={{
@@ -49,14 +54,11 @@ const index = ({ isDashboard = false }) => {
             },
           }}
           colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
-          margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-          yScale={{
-            type: "linear",
-            min: "auto",
-            max: "auto",
-            stacked: true,
-            reverse: false,
-          }}
+          margin={
+            isDashboard
+              ? { top: 40, right: 10, bottom: 500, left: 40 }
+              : { top: 50, right: 110, bottom: 50, left: 60 }
+          }
           curve="catmullRom"
           axisBottom={{
             legend: isDashboard ? undefined : "transportation",

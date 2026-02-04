@@ -1,17 +1,17 @@
 import { ColorModeContext, tokens, useMode } from "./theme";
 import { CssBaseline, ThemeProvider, useTheme } from "@mui/material";
-import Topbar from "./components/shared/topBar/Index";
+import Topbar from "./components/shared/topBar";
 import Sidebar from "./components/shared/sidebar/Index";
-import Dashboard from "./pages/dashboard/Dashboard";
+import Dashboard from "./pages/Dashboard";
 import { Route, Routes } from "react-router-dom";
 import Team from "./pages/Team";
-import Invoices from "./pages/invoice/Index";
-import Contacts from "./pages/contacts/Index";
-import Form from "./pages/form/Index";
-import Calendar from "./pages/calendar/Index";
-import FAQ from "./pages/FAQ/Index";
+import Invoices from "./pages/Invoice";
+import Contacts from "./pages/Contacts";
+import Form from "./pages/Form";
+import Calendar from "./pages/Calendar";
+import FAQ from "./pages/Faq";
 import Bar from "./pages/BarChart";
-import Pie from "./pages/pie/Index";
+import Pie from "./pages/Pie";
 import Line from "./pages/LineChart";
 import Geography from "./pages/GeographyChart";
 

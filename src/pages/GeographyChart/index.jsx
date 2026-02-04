@@ -1,7 +1,7 @@
 import { tokens } from "../../theme";
 import { Box, useTheme } from "@mui/material";
 import { ResponsiveChoropleth } from "@nivo/geo";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 import { geoFeatures } from "../../data/mockGeoFeautres";
 import { mockGeographyData as data } from "../../data/mockData";
 

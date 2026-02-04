@@ -2,7 +2,7 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { Box, Toolbar } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockDataContacts } from "../../data/mockData";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 import { useTheme } from "@mui/material";
 // import { GridToolbar } from "@mui/x-data-grid/internals";
 

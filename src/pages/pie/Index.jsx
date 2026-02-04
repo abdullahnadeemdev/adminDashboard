@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 import MyPie from "../../components/Charts/pieChart/Index";
 
 const Pie = () => {

@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import {
+  Sidebar as ProSidebar,
+  Menu,
+  MenuItem,
+  SubMenu,
+} from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import user from "../../../assets/user.png";
 import { tokens } from "../../../theme";
@@ -33,7 +38,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
-const Index = () => {
+const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -63,7 +68,7 @@ const Index = () => {
         },
       }}
     >
-      <Sidebar collapsed={isCollapsed}>
+      <ProSidebar collapsed={isCollapsed}>
         <Menu>
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -232,9 +237,9 @@ const Index = () => {
             />
           </Box>
         </Menu>
-      </Sidebar>
+      </ProSidebar>
     </Box>
   );
 };
 
-export default Index;
+export default Sidebar;

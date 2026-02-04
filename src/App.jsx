@@ -1,7 +1,7 @@
 import { ColorModeContext, tokens, useMode } from "./theme";
 import { CssBaseline, ThemeProvider, useTheme } from "@mui/material";
-import Topbar from "./components/shared/topBar";
-import Sidebar from "./components/shared/sidebar/Index";
+import Topbar from "./components/shared/TopBar";
+import Sidebar from "./components/shared/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import { Route, Routes } from "react-router-dom";
 import Team from "./pages/Team";

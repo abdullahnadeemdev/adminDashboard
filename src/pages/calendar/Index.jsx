@@ -14,7 +14,7 @@ import {
   useTheme,
   ListItemIcon,
 } from "@mui/material";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 import { tokens } from "../../theme";
 
 const Calendar = () => {
@@ -41,7 +41,7 @@ const Calendar = () => {
   const handleEventClick = () => {
     if (
       window.confirm(
-        `Are you sure you want to delete the event '${selected.event.title}'`
+        `Are you sure you want to delete the event '${selected.event.title}'`,
       )
     ) {
       selected.event.remove();

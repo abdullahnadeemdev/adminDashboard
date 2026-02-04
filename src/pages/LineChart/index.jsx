@@ -1,7 +1,7 @@
 import { tokens } from "../../theme";
 import { Box, useTheme } from "@mui/material";
 import { ResponsiveLine } from "@nivo/line";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 import { mockLineData as data } from "../../data/mockData";
 
 const index = ({ isDashboard = false }) => {

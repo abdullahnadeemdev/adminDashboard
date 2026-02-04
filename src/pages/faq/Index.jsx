@@ -2,7 +2,7 @@ import { AccordionDetails, Box, useTheme, Typography } from "@mui/material";
 import { Accordion } from "@mui/material";
 import { AccordionSummary } from "@mui/material";
 // import { AccordionDetails } from "@mui/material";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { tokens } from "../../theme";
 

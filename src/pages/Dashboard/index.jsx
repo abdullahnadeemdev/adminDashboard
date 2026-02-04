@@ -11,7 +11,7 @@ import BarChart from "../BarChart";
 import GeographyChart from "../GeographyChart";
 import ProgressCircle from "../../components/Dashboard/ProgressCircle";
 import StatBox from "../../components/Dashboard/StatBox";
-import Header from "../../components/shared/header/Header";
+import Header from "../../components/shared/Header";
 
 const Dashboard = () => {
   const theme = useTheme();

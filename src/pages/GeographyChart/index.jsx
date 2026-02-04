@@ -10,7 +10,7 @@ const GeographyChart = ({ isDashboard = false }) => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box>
+    <Box m="20px">
       {/* 1. Only show Header if NOT on Dashboard */}
       {!isDashboard && (
         <Box mb="20px">

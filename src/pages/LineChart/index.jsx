@@ -10,14 +10,14 @@ const index = ({ isDashboard = false }) => {
   return (
     <>
       {!isDashboard ? (
-        <Box>
+        <Box m="20px">
           <Header title="Line Chart" subTitle="Simple Line Chart " />
         </Box>
       ) : (
         ""
       )}
 
-      <Box height={!isDashboard ? "10vh" : "32vh"}>
+      <Box height={!isDashboard ? "90vh" : "32vh"}>
         <ResponsiveLine
           data={data}
           theme={{

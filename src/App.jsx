@@ -1,5 +1,5 @@
-import { ColorModeContext, useMode } from "./theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { ColorModeContext, tokens, useMode } from "./theme";
+import { CssBaseline, ThemeProvider, useTheme } from "@mui/material";
 import Topbar from "./components/shared/topBar/Index";
 import Sidebar from "./components/shared/sidebar/Index";
 import Dashboard from "./pages/dashboard/Dashboard";
@@ -17,13 +17,16 @@ import Geography from "./pages/GeographyChart";
 
 function App() {
   const [theme, colorMode] = useMode();
+  const clrTheme = useTheme();
+  const colors = tokens(clrTheme.palette.mode);
+
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className=" flex ">
+        <div className="flex h-full">
           <Sidebar />
-          <main className="w-full">
+          <main className="w-full ">
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />

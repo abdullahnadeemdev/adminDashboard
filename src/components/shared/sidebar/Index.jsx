@@ -43,7 +43,7 @@ const Index = () => {
       sx={{
         "& .ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,
-          height: "100% !important",
+          // height: "100% !important",
         },
         "& .ps-sidebar-root": {
           border: "none !important", // Optional: removes the default border

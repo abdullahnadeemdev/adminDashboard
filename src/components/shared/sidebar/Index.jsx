@@ -40,7 +40,6 @@ const Index = () => {
   const [selected, setSelected] = useState("Dashboard");
   return (
     <Box
-      height="100vh"
       sx={{
         "& .ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,

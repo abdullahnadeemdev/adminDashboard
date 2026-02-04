@@ -17,7 +17,7 @@ const index = ({ isDashboard = false }) => {
         ""
       )}
 
-      <Box height={!isDashboard ? "10vh" : "75vh"}>
+      <Box height={!isDashboard ? "10vh" : "32vh"}>
         <ResponsiveLine
           data={data}
           theme={{
@@ -56,7 +56,7 @@ const index = ({ isDashboard = false }) => {
           colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
           margin={
             isDashboard
-              ? { top: 40, right: 10, bottom: 500, left: 40 }
+              ? { top: 20, right: 10, bottom: 5, left: 40 }
               : { top: 50, right: 110, bottom: 50, left: 60 }
           }
           curve="catmullRom"

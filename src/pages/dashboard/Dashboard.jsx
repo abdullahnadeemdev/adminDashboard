@@ -18,16 +18,16 @@ const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box m="20px">
+      {/* </Box> */}
+
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subTitle="Welcome to your Dashboard" />
-      </Box>
 
-      <Box>
         <Button
           sx={{
             backgroundColor: colors.blueAccent[700],
             color: colors.grey[100],
-            fontSize: "14px",
+            fontSize: "12px",
             fontWeight: "bold",
             padding: "10px 20px",
           }}
@@ -41,8 +41,8 @@ const Dashboard = () => {
       <Box
         display="grid"
         gridTemplateColumns="repeat(12,1fr)"
-        gap="20px"
-        gridAutoRows="140px"
+        gap="10px"
+        gridAutoRows="160px"
       >
         {/* ROW 1 */}
         <Box
@@ -132,7 +132,7 @@ const Dashboard = () => {
           backgroundColor={colors.primary[400]}
         >
           <Box
-            p="0 30px"
+            p="0 20px"
             mt="25px"
             display="flex"
             alignContent="center"
@@ -148,13 +148,14 @@ const Dashboard = () => {
               </Typography>
 
               <Typography
-                variant="h3"
+                variant="h4"
                 fontWeight="500"
                 color={colors.greenAccent[500]}
               >
                 $69,420
               </Typography>
             </Box>
+
             <Box>
               <IconButton>
                 <DownloadOutlinedIcon
@@ -163,7 +164,8 @@ const Dashboard = () => {
               </IconButton>
             </Box>
           </Box>
-          <Box height="250px" m="-20px 20px 0 0">
+
+          <Box m="0 20px" height={"220px"}>
             <LineChart isDashboard={true} />
           </Box>
         </Box>

@@ -21,9 +21,9 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className=" flex h-screen">
+        <div className=" flex ">
           <Sidebar />
-          <main className=" w-full">
+          <main className="w-full">
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
